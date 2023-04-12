@@ -25,4 +25,5 @@ The following resources were used in the creation of this project:
 ### Font Awesome - https://fontawesome.com/
 ### Unsplash - https://unsplash.com/
 
-#### Live Page deployment : https://ronsap7.github.io/ToDo-list/
+## Live Page deployment 
+ https://ronsap7.github.io/ToDo-list/
