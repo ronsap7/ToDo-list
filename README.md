@@ -24,3 +24,5 @@ The following resources were used in the creation of this project:
 ### Bootstrap - https://getbootstrap.com/
 ### Font Awesome - https://fontawesome.com/
 ### Unsplash - https://unsplash.com/
+
+#Live Page deployment : https://ronsap7.github.io/ToDo-list/
