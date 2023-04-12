@@ -1,6 +1,6 @@
 # To-Do List
 
-This is a simple to-do list web application built using HTML, CSS, and JavaScript. It allows users to add tasks, mark them as completed, and delete them.
+This is a simple to-do list web application built using HTML, CSS, Bootstrap and JavaScript. It allows users to add tasks, mark them as completed, and delete them.
 
 # Getting Started
 To get started with the project, simply clone the repository and open the index.html file in your browser.
