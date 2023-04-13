@@ -1,4 +1,4 @@
-(function toDoList ()  {
+function toDoList() {
   // Get DOM elements
   const addTaskButton = document.getElementById("addTask");
   const newTaskInput = document.getElementById("newTask");
@@ -9,20 +9,19 @@
   addTaskButton.addEventListener("click", onAddTaskButtonClick);
   newTaskInput.addEventListener("keydown", onNewTaskInputKeyDown);
 
-  /**
-   * Handles the "click" event on the "addTaskButton".
-   */
   function onAddTaskButtonClick() {
     const newTask = newTaskInput.value.trim();
 
     if (newTask) {
       const listItem = document.createElement("li");
       listItem.className = "list-group-item d-flex justify-content-between align-items-center";
-      listItem.style.border = "1px solid #ccc";
+      listItem.style.border = "1px solid #FF4E00 ";
       listItem.style.marginBottom = "10px";
+      listItem.style.color = "#00b09b";  
 
       const checkbox = document.createElement("input");
       checkbox.type = "checkbox";
+      
       checkbox.addEventListener("change", onCheckboxChange);
 
       const taskText = document.createElement("span");
@@ -40,25 +39,17 @@
 
       // Display the task added below the "Add Task" button
       lastAddedTask.textContent = `Task added: ${newTask}`;
-      lastAddedTask.marginBottom = "10px";
+      lastAddedTask.style.marginBottom = "10px";
       newTaskInput.value = "";
     }
   }
 
-  /**
-   * Handles the "keydown" event on the "newTaskInput".
-   *
-   * @param {KeyboardEvent} e
-   */
   function onNewTaskInputKeyDown(e) {
     if (e.key === "Enter") {
       addTaskButton.click();
     }
   }
 
-  /**
-   * Handles the "change" event on the checkbox.
-   */
   function onCheckboxChange() {
     const listItem = this.parentElement;
     const deleteIcon = listItem.querySelector(".fas.fa-trash-alt");
@@ -70,9 +61,6 @@
     }
   }
 
-  /**
-   * Handles the "click" event on the delete icon.
-   */
   function onDeleteIconClick() {
     const listItem = this.parentElement;
     const checkbox = listItem.querySelector("input[type=checkbox]");
@@ -81,4 +69,6 @@
       listItem.remove();
     }
   }
-})();
+}
+
+toDoList();
