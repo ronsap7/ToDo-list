@@ -91,7 +91,7 @@ body {
   .list-group-item:hover {
     background: linear-gradient(to bottom, #fff9c4, #fff59d);
     cursor: pointer;
-    color: #a00;
+    color: #fff;
   }
   
   /* Style the checkbox */
